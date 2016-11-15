@@ -5,4 +5,7 @@
 	<lib name="mysql-connector-java-5.1.40-bin.jar" scope="COMPILE">
 		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.40-bin.jar!/"/>
 	</lib>
+	<levels>
+		<level name="Hibernate 5.2.3-5.2.3" value="project"/>
+	</levels>
 </component>
