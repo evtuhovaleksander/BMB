@@ -13,7 +13,7 @@ public class Quantum_Interval {
     public Quantum_Interval(int start, int stop) {
         this.start = start;
         this.stop = stop;
-        this.length=stop-start;
+        this.length=stop-start+1;
     }
     public Quantum_Interval(int start) {
         this.start = start;

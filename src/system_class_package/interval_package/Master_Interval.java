@@ -20,6 +20,6 @@ public class Master_Interval extends Interval {
 
     public void print()
     {
-        System.out.println("MasterInterval start: "+ start+" __ stop: "+stop+" __ "+"masterID: "+masterID);
+        System.out.println("MasterInterval start: "+ start+"    stop: "+stop+"    " +"length: "+length+"    "+"masterID: "+masterID);
     }
 }

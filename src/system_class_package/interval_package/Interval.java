@@ -19,4 +19,6 @@ public class Interval extends Quantum_Interval {
     public Interval(int start, int stop) {
         super(start, stop);
     }
+
+
 }
