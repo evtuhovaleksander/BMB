@@ -1,10 +1,18 @@
 package system_class_package.interval_package;
 
 
+import dnl.utils.text.table.TextTable;
+
+
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Test_Start {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
+
+
 
         Master master0=new Master(0);
         ArrayList<Master_Interval> blocked = new ArrayList<>();
@@ -85,6 +93,40 @@ public class Test_Start {
         
         System.out.println("all free ");
         for (Window_Interval wi:all)wi.print();
+
+        Day day=new Day(all,"day1");
+        GUI_Data gui=new GUI_Data();
+        gui.days=new ArrayList<Day>();
+        gui.days.add(day);
+        for (int i = 0; i <288 ; i++) {
+            gui.columnName[i]=Integer.toString(i);
+        }
+        gui.tab_data[0]=gui.days.get(0).obj_mas;
+
+
+
+
+        TextTable tt = new TextTable(gui.columnName, gui.tab_data);
+        tt.printTable();
+
+
+
+        System.out.println("ind = 16");
+        gui.print_variants(0,16,1,gui);
+        System.out.println("\n\n");
+
+        System.out.println("ind = 0");
+        gui.print_variants(0,0,1,gui);
+        System.out.println("\n\n");
+
+        System.out.println("ind = 2");
+        gui.print_variants(0,2,1,gui);
+        System.out.println("\n\n");
+
+        System.out.println("ind = 6");
+        gui.print_variants(0,6,1,gui);
+        System.out.println("\n\n");
+
     }
     }
 

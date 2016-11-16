@@ -5,7 +5,16 @@
 	<lib name="mysql-connector-java-5.1.40-bin.jar" scope="COMPILE">
 		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.40-bin.jar!/"/>
 	</lib>
+	<lib name="j-text-utils-0.3.3.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/j-text-utils-0.3.3.jar!/"/>
+	</lib>
+	<lib name="commons-lang-2.6.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/commons-lang-2.6.jar!/"/>
+	</lib>
+	<lib name="joda-time-2.4.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/joda-time-2.4.jar!/"/>
+	</lib>
 	<levels>
-		<level name="Hibernate 5.2.3-5.2.3" value="project"/>
+		<level name="Hibernate 5.2.3-5.2.3 (2)" value="project"/>
 	</levels>
 </component>
